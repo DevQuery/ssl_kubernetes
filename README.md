@@ -6,6 +6,7 @@ Securing the Ingress Using Cert-Manager
 2) helm repo add jetstack https://charts.jetstack.io
 3) helm repo update
 4) helm install cert-manager jetstack/cert-manager --namespace cert-manager --version v1.2.0 --set installCRDs=true
+ 
         Output
 		NAME: cert-manager
 		LAST DEPLOYED: Sun Dec 13 11:29:32 2020
@@ -17,8 +18,11 @@ Securing the Ingress Using Cert-Manager
 		cert-manager has been deployed successfully!
  
 5) nano production_issuer.yaml
+
       Attached the below description 
+      
 6) kubectl apply -f production_issuer.yaml
+
            Output 
             clusterissuer.cert-manager.io/letsencrypt-prod created
 7) nano kubernetes-ingress.yaml
