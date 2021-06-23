@@ -29,6 +29,7 @@ Securing the Ingress Using Cert-Manager
 
 
       Attached the yaml file below description 
+      
       Output
           ingress.networking.k8s.io/kubernetes-ingress configured
 	  
